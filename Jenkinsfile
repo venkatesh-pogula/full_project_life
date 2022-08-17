@@ -22,6 +22,11 @@ pipeline{
 
             }
         }
+        post{
+            success{
+                junit '**/TEST-*.xml'
+            }
+        }
     }
 
 
